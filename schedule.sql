@@ -1,15 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 29 2021 г., 17:25
+-- Время создания: Апр 02 2021 г., 20:11
 -- Версия сервера: 8.0.19
--- Версия PHP: 7.2.29
+-- Версия PHP: 7.1.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
-SET time_zone = "+00:00"; 
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -101,7 +101,7 @@ CREATE TABLE `gruppa` (
 --
 
 INSERT INTO `gruppa` (`gruppa_id`, `name`, `special_id`, `date_begin`, `date_end`) VALUES
-(1, 'ИС-18-6Б', 1, '2018-09-01', '2022-07-01'),
+(1, 'ДИ-16-4С', 1, '2018-09-01', '2022-07-01'),
 (2, 'П-18-45Б', 1, '2018-09-01', '2022-07-01');
 
 -- --------------------------------------------------------
@@ -287,7 +287,7 @@ CREATE TABLE `subject` (
 
 INSERT INTO `subject` (`subject_id`, `name`, `otdel_id`, `hours`, `active`) VALUES
 (1, 'Основы высшей математики', 2, 36, 1),
-(2, 'Программное обеспечение и операционные системы', 1, 62, 1);
+(2, 'Рисование', 1, 62, 1);
 
 -- --------------------------------------------------------
 
@@ -332,13 +332,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `lastname`, `firstname`, `patronymic`, `login`, `pass`, `gender_id`, `birthday`, `role_id`, `active`) VALUES
-(1, 'Фамильенко', 'Имельян', 'Отчествович ', 'admin', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '1965-08-13', 1, 1),
-(2, 'Анзоров', 'Магомед', 'Ибрагимович', 'anza', '$2y$10$HBfz5Tmx52yK1XnQPnql9OmfWFIAbWtgdTzsBMN7.RL7ej5ks4Ewe', 1, '2002-11-28', 4, 1),
-(3, '41231', '12323', '21321', '123', '$2y$10$xqlvqWC6LAj3KdHZrjHksuXYM5Uz8M/LXGjyW1OB.VOA6jT5/aB4u', 1, '2021-01-12', 4, 1),
-(4, 'Картошкин', 'Логин', 'Феопентович', 'login', '$2y$10$I3/rXDEhptRkc.oujlY9ROWLoMVzmimQzMab9RSQzGyY6naAeqWEi', 1, '2002-03-12', 4, 1),
-(5, 'Мюллер', 'Эдвард', 'Вольфгангович', 'edward', '$2y$10$r4ydLZO2G2TZmh6eH.NwkO7MRO6m43BrpA9xJ7egEYb8ldkpG0Sqi', 1, '2002-07-17', 4, 1),
-(6, 'Молибога', 'Татьяна', 'Николаена', 'tanya', '$2y$10$/hM8rrn9BJhhRQ1XX9wCnO1alRkmz4PzAR/tq34LsF9TXuRl3IHWq', 2, '1960-03-08', 3, 1),
-(7, 'Щербаков', 'Георгий', 'Иванович', 'georg', '$2y$10$aQIzAqfRK5Qoi5Z8ebeMi.3gsmqwusMKaCQajvZMrrIkKoZrVrcf2', 1, '1958-06-06', 3, 1);
+(1, 'Фомин', 'Аxмед', ' Цифровович', 'Axmedezhhi', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '1965-08-13', 1, 1),
+(2, 'Клавиатуров', 'Анзор', 'Магомедович', 'Anzorpomamevor', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '2002-11-28', 4, 1),
+(3, 'Фаршмаков', 'Дауд', 'Адамович', 'Daudmenyazovut', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '2021-01-12', 4, 1),
+(4, 'Мышович', 'Xарон', 'Поxоронович', 'Xaronbambamipohoron', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '2002-03-12', 4, 1),
+(5, 'Кентович', 'Эмин', 'Отцовович', 'Eminrazdvaitibaraban', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '2002-07-17', 4, 1),
+(6, 'Абдирова', 'Абдилла', 'Кольтовна', 'Abdimusheilovlunati', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 2, '1960-03-08', 3, 1),
+(7, 'Варшовой', 'Абдуллаги', 'Абу-бандитович', 'Abdullagisomnoitineshuti', '$2y$10$mFlJsQgNvDQ27XfADrMh8O9OQA47f2gLmqYdwGeg8SpsvdoRUX95S', 1, '1958-06-06', 3, 1);
 
 --
 -- Индексы сохранённых таблиц
